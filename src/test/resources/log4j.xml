@@ -7,14 +7,14 @@
 		</layout>
 	</appender>
 
-	<appender name="le" class="com.logentries.log4j.LogentriesAppender">
-		<param name="Token" value="f3ce0bf0-5c6a-4195-a346-e175c4eceba6" />
-		<param name="Debug" value="false" />
-		<param name="Ssl" value="false" />
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss ZZZ} %-5p (%F:%L)  %m" />
-		</layout>
-	</appender>
+    <appender name="le" class="com.logentries.log4j.LogentriesAppender">
+        <param name="Token" value="c35da358-ca36-4307-8807-31bb17b3f61a"/>
+        <param name="Ssl" value="false"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{EEE MMM dd HH:mm:ss ZZZ yyyy},
+(%F:%L) %-5p: %m"/>
+        </layout>
+    </appender>
 
 	<appender name="SYSLOG" class="org.apache.log4j.net.SyslogAppender">
 		<param name="Facility" value="LOCAL7" />
